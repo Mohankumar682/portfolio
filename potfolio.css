@@ -1,0 +1,20 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+body{
+    background-image: url('https://ts4.mm.bing.net/th?id=OIP.FI3ujMlXAMj3q2Pfhr3NgwHaE8&pid=15.1')
+}
+#profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%; 
+    object-fit: cover; 
+}
