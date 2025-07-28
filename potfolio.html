@@ -1,73 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="./potfolio.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mohan Kumar S - AI/ML Developer</title>
+    <link rel="stylesheet" href="./potfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div id="profile">
-            <img src="./IMG_0514[1].JPG" alt="">  
-    </div>
-    <h1 id="a">About</h1>
-        <p>I'm Mohan Kumar S, a passionate and curious second-year B.E. Computer Science and Engineering student 
-            specializing in Artificial Intelligence and Machine Learning at Kalaignar Karunanidhi Institute of Technology, Coimbatore.
-            With a strong foundation in C, Python, Java, and Data Structures & Algorithms, I actively engage in building 
-            practical, impactful projects—ranging from voice assistants to IoT-based accident detection and smart mirror systems. 
-            I enjoy exploring real-world applications of AI and have completed several certifications to deepen my knowledge in machine learning, networking, and agile practices.
-            I’m also enthusiastic about competitive programming, constantly improving my problem-solving skills on platforms like LeetCode and CodeChef.
-            My goal is to become a well-rounded software engineer who bridges the gap between intelligent systems and everyday human problems. 
-            I’m always eager to collaborate, learn, and create solutions that matter.
-        </p>
-                
-       <div>
-         <h2>Certificate</h2>
-        <ul>
-            <li>Supervised Machine Learning – Mist AI</li>
-            <li>JNCIA-MistAI Associate</li>                              
-            <li>Machine Learning with Python</li>
-            <li>Google Agile Essentials</li>
-            <li>Get Started with Python</li>
-            <li>Machine Learning for All</li>
-            <li>Network Security Certificate</li>
-        </ul>
-       </div>
-    <section id="projects">
-  <h1>🚀 My Projects</h1>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>MK</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-  <div class="project">
-    <h1>Voice Assistant</h1>
-    <p>
-      A custom-built assistant that responds to voice commands, performs basic tasks, and fetches
-      relevant data using NLP and speech libraries.
-    </p>
-    <ul>
-      <li><strong>Tech Stack:</strong> Python, Speech Recognition, TTS, NLP</li>
-      <li><strong>Status:</strong> In Progress</li>
-      <li><strong>Goal:</strong> Learn and apply core AI/ML techniques</li>
-    </ul>
-  </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="profile-image">
+                    <img src="./IMG_0514[1].JPG" alt="Mohan Kumar S">
+                    <div class="profile-ring"></div>
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Mohan Kumar S</span>
+                </h1>
+                <p class="hero-subtitle">AI/ML Developer & Computer Science Student</p>
+                <p class="hero-description">
+                    Passionate about creating intelligent solutions that bridge technology and human needs
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
 
-  <div class="project">
-    <h3>Study Helper Application</h3>
-    <p>
-      A productivity app to help students prepare for exams by organizing notes, generating
-      questions, and tracking study sessions.
-    </p>
-    <ul>
-      <li><strong>Tech Stack:</strong> Python / Web-based (HTML, CSS, JS)</li>
-      <li><strong>Status:</strong> In Progress</li>
-      <li><strong>Goal:</strong> Make study time smarter and more effective</li>
-    </ul>
-  </div>
-</section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate and curious second-year B.E. Computer Science and Engineering student 
+                        specializing in <strong>Artificial Intelligence and Machine Learning</strong> at Kalaignar Karunanidhi Institute of Technology, Coimbatore.
+                    </p>
+                    <p>
+                        With a strong foundation in <strong>C, Python, Java, and Data Structures & Algorithms</strong>, I actively engage in building 
+                        practical, impactful projects—ranging from voice assistants to IoT-based accident detection and smart mirror systems.
+                    </p>
+                    <p>
+                        I enjoy exploring real-world applications of AI and have completed several certifications to deepen my knowledge in machine learning, networking, and agile practices.
+                        I'm also enthusiastic about competitive programming, constantly improving my problem-solving skills on platforms like <strong>LeetCode and CodeChef</strong>.
+                    </p>
+                    <p>
+                        My goal is to become a well-rounded software engineer who bridges the gap between intelligent systems and everyday human problems. 
+                        I'm always eager to collaborate, learn, and create solutions that matter.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <h1 id="e">
-        Contact</h1>
-        <ul>
-           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAYFBMVEUAd7X///8Ac7NGlMRGk8QAdrUAbLAAbrDZ7PXV6fPy+fw9ir/p9Pkugbo0hr3D2umz0ORUnMh3q9C72eplocoIe7dsps6dxN6lyeCDs9TL4u+WwNzg7vVTmMYhg7uy1OcLxWtDAAABaklEQVRIie3W7Y6CMBAFUBxohwIK8qEIgu//lltou7TortNu9p83MRGSIzgzlEaHwETyU51jr5wrBWsODDzCgNcLrHjkHV5JOIE/hEnCOATGEiYhMHGgLBELgdi1lxlJ1IH8uvS17CjShtiriRCekM1mlm7oBaE2sCEMhA1vBg5+kCUG9n63GmGqXJYTqmNDlhcrrAkXdPsIx3FI+4TidpPDkHNOm7ndrP6U9TH/5VZxDewPsEvaS5t0CK8h9qXKSd4tq9T3EaC73rOl2EVp/X0bcqcddzMMU7YtbFuHHShsqH+lnJwlsUIqFIW7mLZAhPuYOfaGh5nR4fBotgLVQIWik+PE+11h38NCLUGmV+Ypfw9HdQU0j/lAhfr9AKafggizXHc81/VJibA4qvKzk4HE4nzgB/4jfLU8UiA26RqxQn0wfEOhTjTPMEIdZh9EOsw9QXzpPOdvMHgTGLztDN7oBm+twzfzYfkCChobmnKthiYAAAAASUVORK5CYII=" alt=""
-           <a href="">
-        </ul>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>AI/ML Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Machine Learning</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">NLP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Data Structures</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">🚀 My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <div class="project-status in-progress">In Progress</div>
+                    </div>
+                    <h3 class="project-title">Voice Assistant</h3>
+                    <p class="project-description">
+                        A custom-built assistant that responds to voice commands, performs basic tasks, and fetches
+                        relevant data using NLP and speech libraries.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Speech Recognition</span>
+                        <span class="tech-tag">TTS</span>
+                        <span class="tech-tag">NLP</span>
+                    </div>
+                    <div class="project-goal">
+                        <strong>Goal:</strong> Learn and apply core AI/ML techniques
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="project-status in-progress">In Progress</div>
+                    </div>
+                    <h3 class="project-title">Study Helper Application</h3>
+                    <p class="project-description">
+                        A productivity app to help students prepare for exams by organizing notes, generating
+                        questions, and tracking study sessions.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-goal">
+                        <strong>Goal:</strong> Make study time smarter and more effective
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certificates-timeline">
+                <div class="certificate-item">
+                    <div class="certificate-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Supervised Machine Learning – Mist AI</h3>
+                        <p>Advanced machine learning concepts and supervised learning algorithms</p>
+                    </div>
+                </div>
+                <div class="certificate-item">
+                    <div class="certificate-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>JNCIA-MistAI Associate</h3>
+                        <p>Juniper Networks Certified Internet Associate in AI-driven networking</p>
+                    </div>
+                </div>
+                <div class="certificate-item">
+                    <div class="certificate-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Machine Learning with Python</h3>
+                        <p>Practical implementation of ML algorithms using Python libraries</p>
+                    </div>
+                </div>
+                <div class="certificate-item">
+                    <div class="certificate-icon">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Google Agile Essentials</h3>
+                        <p>Agile methodology and project management principles</p>
+                    </div>
+                </div>
+                <div class="certificate-item">
+                    <div class="certificate-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Get Started with Python</h3>
+                        <p>Fundamentals of Python programming and best practices</p>
+                    </div>
+                </div>
+                <div class="certificate-item">
+                    <div class="certificate-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Machine Learning for All</h3>
+                        <p>Introduction to machine learning concepts and applications</p>
+                    </div>
+                </div>
+                <div class="certificate-item">
+                    <div class="certificate-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Network Security Certificate</h3>
+                        <p>Cybersecurity fundamentals and network protection strategies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <p class="contact-description">
+                    I'm always open to discussing new opportunities, collaborations, or just having a chat about technology and AI!
+                </p>
+                <div class="contact-methods">
+                    <a href="mailto:mohankumar@example.com" class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Email</h3>
+                            <p>mohankumar@example.com</p>
+                        </div>
+                    </a>
+                    <a href="https://linkedin.com/in/mohankumar" class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>LinkedIn</h3>
+                            <p>Connect with me</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/mohankumar" class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>GitHub</h3>
+                            <p>Check out my code</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Mohan Kumar S. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
